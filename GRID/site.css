@@ -1,0 +1,49 @@
+/* CSS Document */
+body {
+  display: grid;
+  grid-template-rows: 10% 90% 50%;
+  grid-template-areas: 'logo menu menu menu'
+    'main main main main'
+    'foot foot foot foot';
+  grid-gap: 10px;
+}
+body > * {
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 10px;
+}
+#logo {
+  grid-area: logo;
+  color: lawngreen;
+  background-color: orange;
+}
+#menu {
+  grid-area: menu;
+  background-color: orange;
+}
+main {
+  grid-area: main;
+
+}
+footer {
+  grid-area: foot;
+  background-color: orange;
+}
+.carousel {
+  background-color: transparent !important;
+  background: #EEE;
+}
+.carousel-cell {
+  margin-right: 10px;
+  overflow: hidden;
+}
+.carousel-cell img {
+  display: block;
+  height: 90vh;
+	
+}
+@media screen and (min-width: 768px) {
+  .carousel-cell img {
+    height: 80vh;
+  }
+}

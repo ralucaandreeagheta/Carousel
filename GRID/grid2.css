@@ -1,0 +1,24 @@
+/* CSS Document */
+
+
+.container {
+	display: grid;
+	grid-template-areas: 'logo menu menu menu'
+						 'logo menu menu menu';
+}
+
+.container div {
+	background-color: #444;
+	color: #fff;
+	font-size: 1.5em;
+	padding: 20px;
+}
+
+#logo {
+	grid-area: logo;
+	
+}
+
+#menu {
+	grid-area: menu;
+}
